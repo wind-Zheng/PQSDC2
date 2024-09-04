@@ -9,6 +9,7 @@
 dir_pwd=`pwd`
 head="SRR69565"
 data_set_name="HiSeq-X-Ten_Mus_musculus_PE"
+mkdir ${data_set_name}
 cd ${data_set_name}
 for index in `seq 17 19`
 do

@@ -10,6 +10,7 @@
 dir_pwd=`pwd`
 head="SRR165530"
 data_set_name="Dnb-Seq-T7_human_metagenome_SE"
+mkdir ${data_set_name}
 cd ${data_set_name}
 for index in `seq 33 43`
 do

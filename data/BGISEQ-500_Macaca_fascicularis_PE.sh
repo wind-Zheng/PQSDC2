@@ -11,6 +11,7 @@
 dir_pwd=`pwd`
 head="SRR8386"
 data_set_name="BGISEQ-500_Macaca_fascicularis_PE"
+mkdir ${data_set_name}
 cd ${data_set_name}
 for index in `seq 199 206`
 do

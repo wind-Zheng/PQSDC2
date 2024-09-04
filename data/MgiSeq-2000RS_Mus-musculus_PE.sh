@@ -11,6 +11,7 @@
 dir_pwd=`pwd`
 head="SRR17794"
 data_set_name="MgiSeq-2000RS_Mus-musculus_PE"
+mkdir ${data_set_name}
 cd ${data_set_name}
 for index in 724 733 735 741 745 766 873 879 925 926 960
 do
