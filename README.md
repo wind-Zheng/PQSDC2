@@ -105,6 +105,11 @@ Our experiment was conducted on the SUGON-7000A supercomputer system at the Nann
   
   8\*900GB external storage.
 
+In addition to this, the code programming environment for the experiment is as follows:
+  torch : 1.10.1+cu111
+  GCC ： 13.1.0
+  Slurn : slurm 19.05.5-1.0.0-29
+  
 ## Dataset Acquisition
 We experimentally evaluated using the real publicly available sequencing datasets from the NCBI database.
 download this dataset by the following command(Refer to the .sh script in the data folder）:
