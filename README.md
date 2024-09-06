@@ -111,7 +111,7 @@ In addition to this, the code programming environment for the experiment is as f
   
   GCC ： 13.1.0
   
-  Slurn : slurm 19.05.5-1.0.0-29
+  Slurn : 19.05.5-1.0.0-29
   
 ## Dataset Acquisition
 We experimentally evaluated using the real publicly available sequencing datasets from the NCBI database.
