@@ -66,7 +66,8 @@ if [ "${mode}" = "c" ]; then
   ls -l --block-size=1 result.pqsdc_v2
   # 删除临时目录
   rm -r temp
-  rm -rf *dat*
+  rm -rf partition_dat
+  rm -rf *.dat*
   rm -r *key*
   # 5 删除所有文件
   #mv ${fileName%%.qualities}.pqsrc_v1 ${pwdPath}
