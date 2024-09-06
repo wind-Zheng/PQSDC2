@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # 1 安装配置环境依赖https://github.com/zpaq/zpaq.git
-#git clone https://github.com/zpaq/zpaq.git 这里已经下载完毕
-#cd zpaq
-#make
-#cd ..
+git clone https://github.com/zpaq/zpaq.git 这里已经下载完毕
+cd zpaq
+make
+cd ..
 
 # 2 编译PQSDC
 g++ partition_all_ESort.cpp -std=c++11 -fopenmp -O3 -o partition_all_ESort
