@@ -74,6 +74,7 @@ if [ "${mode}" = "c" ]; then
   #rm -rf *dat*
   cd ${pwdPath}
   #rm -rf ${fileName}.partition
+  echo"----------------------------------------------------------------------"
   echo "Compression mode"
   echo "FileName : ${fileName}"
   echo "Threads : ${threads}"
@@ -119,6 +120,7 @@ if [ "${mode}" = "d" ]; then # 输入文件夹
 
   rm -rf ${fileName}
   cd ${pwdPath}
+  echo"----------------------------------------------------------------------"
   echo "Decompression mode"
   echo "FileName : ${fileName}"
   echo "Threads : ${threads}"
