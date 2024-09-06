@@ -311,7 +311,7 @@ void decompress(std::string &inputfile,int parnum){
 
     vector<std::ifstream*> indata(parnum);
     for (int i = 0; i < parnum; i++) {
-        string filename = inputfile+"/data_"+ std::to_string(i) + ".dat.PQVRC.PQde";
+        string filename = inputfile+"/data_"+ std::to_string(i) + ".dat.PQSDC2.PQde";
         indata[i] = new std::ifstream(filename);
     }
     cout<<"t0:准备工作"<<endl;
