@@ -54,45 +54,32 @@ We present the validation dataset `PQSDC2/data/test.qualities`
 cd ${PQSDC2_PATH}
 cd ..
 cd data
-../src/pqsdc2.sh c 4 8 test.qualities
+pqsdc2.sh c 4 8 test.qualities
 ```
 results:
 ```sh
+----------------------------------------------------------------------
 compression mode.
 fileName : test.qualities
 threads  : 8
 savepath : test.qualities.partition/result.pqsdc_v2
-----------------------------------------------------------------------
-1 reads partition, generate test.qualities.partition directory.
-2 parallel run-length encoding prediction mapping.
-3 cascade zpaq compressor.
-4 pacing files into test.qualities.partition/result.pqsdc_v2.
-5 removing redundant files.
-over!
-----------------------------------------------------------------------
 ```
 #### 2、Using 8 CPU cores for decompression.
 ```sh
-../src/pqsdc2.sh d 4 8 test.qualities.partition_all
+pqsdc2.sh d 4 8 test.qualities.partition_all
 ```
 results:
 ```sh
+----------------------------------------------------------------------
 running pqsdc algorithm at Sat Jun 17 15:31:22 CST 2023
 de-compression mode
 fileName : test.qualities.partition
 threads  : 8
 savepath : test.qualities.partition.partition.pqsdc_v2
-----------------------------------------------------------------------
-1 unpacking test.qualities.partition/result.pqsdc_v2.
-2 unsing zpaq decompression files.
-3 parallel run-length encoding prediction mapping.
-4 merge partitions to restore the original file
-over
-----------------------------------------------------------------------
 ```
 #### 3、Verify if the decompression is successful.
 ```sh
-pqsdc_tools -verify test.fastq qualities test.qualities.pqsdc_de_v2
+pqsdc_tools -verify test.fastq qualities test.qualities.PQSDC2_de
 ```
 results:
 ```sh
