@@ -67,7 +67,7 @@ int main(int argc, char** argv){
 }
 void compress(std::string &inputfile,int parnum,int thread){
     string pre_File = inputfile+".csv.pre";
-    string out_data = inputfile+".PQVRC";
+    string out_data = inputfile+".PQSDC2";
     std::ifstream inFile,inPre;
     inFile.open(inputfile.c_str(), std::ios::in);
     inPre.open(pre_File.c_str(), std::ios::in);
