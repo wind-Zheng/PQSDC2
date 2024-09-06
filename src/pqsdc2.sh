@@ -73,6 +73,10 @@ if [ "${mode}" = "c" ]; then
   #rm -rf *dat*
   cd ${pwdPath}
   #rm -rf ${fileName}.partition
+  echo "Compression mode"
+  echo "FileName : ${fileName}"
+  echo "Threads : ${threads}"
+  echo "SavePath : "${fileName}".paitition_all/result.pqsdc_v2"
 fi
 
 if [ "${mode}" = "d" ]; then # 输入文件夹
@@ -114,5 +118,8 @@ if [ "${mode}" = "d" ]; then # 输入文件夹
 
   rm -rf ${fileName}
   cd ${pwdPath}
-
+  echo "Decompression mode"
+  echo "FileName : ${fileName}"
+  echo "Threads : ${threads}"
+  echo "SavePath : ${fileName%.*}.PQSDC2_de"
 fi
