@@ -32,6 +32,9 @@ source ~/.bashrc
     Basic Useage: PQSDC2.sh [command option]
        c [parnum] [threads] [qualities file]                     *compression mode.
        d [parnum] [threads] [pqsdc2 generate directory]          *decompression mode.
+    Cluster Useage: pqsdc2_cluster.slurm [command option]
+       -c [parnum] [threads] [qualities file]                     *compression mode.
+       -d [parnum] [threads] [qualities file]                      *decompression mode.
     Advanced Usage:pqsdc_tools [command option]
        -fileinfo [input-fastq-file]                       *print basic statistic information.
        -dirinfo [input-dir-name]                          *print basic statistic information.
@@ -83,7 +86,11 @@ results:
 ```sh
 lossless recover all qualities.
 ```
-
+#### 4、Cluster Parallel
+**Nu** is the number of nodes required for the cluster, **threads** is the number of threads within a single node.
+```sh
+sbatch -p gpu1 -N ${Nu} -c ${threads} -n ${Nu} -e cluster/test_4_c.err -o cluster/test_4_c.out ../src/pqsdc2_cluster.slurm -c 4 4 test.qualities
+```
 ## Our Experimental Configuration
 Our experiment was conducted on the SUGON-7000A supercomputer system at the Nanning Branch of the National Supercomputing Center, using a queue of CPU/GPU heterogeneous computing nodes. The compute nodes used in the experiment were configured as follows: 
   
