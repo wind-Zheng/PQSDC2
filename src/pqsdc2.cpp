@@ -17,7 +17,7 @@
 #include <stdexcept>
 
 using namespace std;
-using namespace libzpaq;
+
 
 
 void compress(std::string &inputfile,int parnum,int thread);
