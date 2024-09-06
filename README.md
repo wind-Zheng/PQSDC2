@@ -54,7 +54,7 @@ We present the validation dataset `PQSDC2/data/test.qualities`
 cd ${PQSDC2_PATH}
 cd ..
 cd data
-pqsdc2.sh c 4 8 test.qualities
+../src/pqsdc2.sh c 4 8 test.qualities
 ```
 results:
 ```sh
@@ -73,7 +73,7 @@ over!
 ```
 #### 2、Using 8 CPU cores for decompression.
 ```sh
-pqsdc2.sh d 4 8 test.qualities.partition
+../src/pqsdc2.sh d 4 8 test.qualities.partition
 ```
 results:
 ```sh
