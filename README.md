@@ -58,10 +58,10 @@ pqsdc2.sh c 4 8 test.qualities
 results:
 ```sh
 ----------------------------------------------------------------------
-compression mode.
-fileName : test.qualities
-threads  : 8
-savepath : test.qualities.partition/result.pqsdc_v2
+Compression mode
+FileName : test.qualities
+Threads : 8
+SavePath : test.qualities.paitition_all/result.pqsdc_v2
 ```
 #### 2、Using 8 CPU cores for decompression.
 ```sh
@@ -70,11 +70,10 @@ pqsdc2.sh d 4 8 test.qualities.partition_all
 results:
 ```sh
 ----------------------------------------------------------------------
-running pqsdc algorithm at Sat Jun 17 15:31:22 CST 2023
-de-compression mode
-fileName : test.qualities.partition
-threads  : 8
-savepath : test.qualities.partition.partition.pqsdc_v2
+Decompression mode
+FileName : test.qualities.partition_all
+Threads : 8
+SavePath : test.qualities.PQSDC2_de
 ```
 #### 3、Verify if the decompression is successful.
 ```sh
