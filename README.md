@@ -117,3 +117,13 @@ download this dataset by the following command(Refer to the .sh script in the da
 nohup bash BGISEQ-500_Macaca_fascicularis_PE.sh > BGISEQ-500_Macaca_fascicularis_PE_download.log &
 ```
 Dataset download and extraction using the `SRA-Tools：https://github.com/ncbi/sra-tools tool`.
+
+## Acknowledgements
+- Thanks to [@HPC-GXU](https://hpc.gxu.edu.cn) for the computing device support.   
+- Thanks to [@NCBI](https://www.freelancer.com/u/Ostokhoon) for all available datasets.
+
+## Additional Information
+
+**Authors:**     NBJL-BioGrop.
+
+**Contact us:**  https://nbjl.nankai.edu.cn OR zhengyf@nbjl.nankai.edu.cn OR sunh@nbjl.naikai.edu.cn
