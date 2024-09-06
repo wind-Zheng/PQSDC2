@@ -118,7 +118,7 @@ if [ "${mode}" = "d" ]; then # 输入文件夹
   ../src/partition_all_ESort -d ${parnum} ${threads} ${fileName}
  
 
-  #rm -rf ${fileName}
+  rm -rf ${fileName}
   cd ${pwdPath}
   echo "----------------------------------------------------------------------"
   echo "Decompression mode"
