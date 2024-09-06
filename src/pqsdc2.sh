@@ -103,7 +103,7 @@ if [ "${mode}" = "d" ]; then # 输入文件夹
   # 3 进行分区文件进行游程预测映射
   for ((i = 0; i < parnum; i++)); do
     {
-      ../src/pqsdc2 -d ${parnum} ${threads} data_${i}.dat.PQVRC
+      ../../src/pqsdc2 -d ${parnum} ${threads} data_${i}.dat.PQVRC
     } &
   done
   wait
