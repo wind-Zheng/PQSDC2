@@ -307,7 +307,7 @@ void compress(std::string &inputfile,int parnum,int thread){
 
 void decompress(std::string &inputfile,int parnum){
     string in_partition=inputfile+"/partition_dat";
-    string out_File=inputfile.substr(0,inputfile.rfind('.'))+".PQVRC2_par_de";
+    string out_File=inputfile.substr(0,inputfile.rfind('.'))+".PQSDC2_de";
 
     vector<std::ifstream*> indata(parnum);
     for (int i = 0; i < parnum; i++) {
