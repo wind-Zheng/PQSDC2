@@ -110,6 +110,8 @@ In addition to this, the code programming environment for the experiment is as f
   torch : 1.10.1+cu111
   
   GCC ： 13.1.0
+
+  Open Mpi : 2.1.2
   
   Slurn : 19.05.5-1.0.0-29
   
