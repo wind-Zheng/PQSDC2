@@ -11,6 +11,7 @@
 #include <iomanip>
 #include <functional>
 #include <dirent.h>
+#include <cstdint>
 using namespace std;
 
 
