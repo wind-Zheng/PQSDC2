@@ -15,7 +15,6 @@
 #include <omp.h>
 #include<time.h>
 #include <stdexcept>
-#include "libzpaq.h"
 
 using namespace std;
 using namespace libzpaq;
