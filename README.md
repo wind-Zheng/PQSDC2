@@ -90,7 +90,7 @@ lossless recover all qualities.
 ```sh
 sbatch -p gpu1 -N 4 -c 6 -n 4 -e cluster/test_4_c.err -o cluster/test_4_c.out ../src/pqsdc2_cluster.slurm -c 4 4 test.qualities
 ```
-#### 4、Using 4 nodes and 6 threads for cluster parallel decompression
+#### 5、Using 4 nodes and 6 threads for cluster parallel decompression
 ```sh
 sbatch -p gpu1 -N 4 -c 6 -n 4 -e cluster/test_4_c.err -o cluster/test_4_c.out ../src/pqsdc2_cluster.slurm -d 4 4 test.qualities
 ```
