@@ -19,7 +19,6 @@ cd PQSDC2/src
 Thirdly, Run the following command：
 ```shell script
 bash install.sh
-#Warning!:GNU Make > 3.82.
 ```
 Finally, Configure the environment variables with the following command:
 ```shell script
