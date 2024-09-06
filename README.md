@@ -73,7 +73,7 @@ over!
 ```
 #### 2、Using 8 CPU cores for decompression.
 ```sh
-../src/pqsdc2.sh d 4 8 test.qualities.partition
+../src/pqsdc2.sh d 4 8 test.qualities.partition_all
 ```
 results:
 ```sh
