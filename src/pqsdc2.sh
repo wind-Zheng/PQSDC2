@@ -49,7 +49,7 @@ if [ "${mode}" = "c" ]; then
         zpaq a partition_dat.zpaq partition_dat -method 5 -threads ${threads}
       fi
       if (( i != parnum )); then
-        zpaq a data_${i}.dat.PQVRC.zpaq data_${i}.dat.PQVRC -method 5 -threads ${threads}
+        zpaq a data_${i}.dat.PQSDC2.zpaq data_${i}.dat.PQSDC2 -method 5 -threads ${threads}
       fi
     } &
   # 记录第三部分执行时间
@@ -74,7 +74,7 @@ if [ "${mode}" = "c" ]; then
   #rm -rf *dat*
   cd ${pwdPath}
   #rm -rf ${fileName}.partition
-  echo"----------------------------------------------------------------------"
+  echo "----------------------------------------------------------------------"
   echo "Compression mode"
   echo "FileName : ${fileName}"
   echo "Threads : ${threads}"
@@ -100,7 +100,7 @@ if [ "${mode}" = "d" ]; then # 输入文件夹
         zpaq x partition_dat.zpaq -method 5 -threads ${threads}
       fi
       if (( i != parnum )); then
-        zpaq x data_${i}.dat.PQVRC.zpaq -method 5 -threads ${threads}
+        zpaq x data_${i}.dat.PQSDC2.zpaq -method 5 -threads ${threads}
       fi
     } &
   done
@@ -109,7 +109,7 @@ if [ "${mode}" = "d" ]; then # 输入文件夹
   # 3 进行分区文件进行游程预测映射
   for ((i = 0; i < parnum; i++)); do
     {
-      ../../src/pqsdc2 -d ${parnum} ${threads} data_${i}.dat.PQVRC
+      ../../src/pqsdc2 -d ${parnum} ${threads} data_${i}.dat.PQSDC2
     } &
   done
   wait
@@ -118,9 +118,9 @@ if [ "${mode}" = "d" ]; then # 输入文件夹
   ../src/partition_all_ESort -d ${parnum} ${threads} ${fileName}
  
 
-  rm -rf ${fileName}
+  #rm -rf ${fileName}
   cd ${pwdPath}
-  echo"----------------------------------------------------------------------"
+  echo "----------------------------------------------------------------------"
   echo "Decompression mode"
   echo "FileName : ${fileName}"
   echo "Threads : ${threads}"
