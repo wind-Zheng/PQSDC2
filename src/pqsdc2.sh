@@ -40,7 +40,7 @@ if [ "${mode}" = "c" ]; then
   part2_end_time=$(date +%s)
   part2_duration=$((part2_end_time - part1_end_time))
   echo "第二部分执行时间: ${part2_duration} 秒"
-
+  
   cd ${fileName}.partition_all	
   # 3 使用ZPAQ算法进行级联压缩
   for ((i = 0; i <= parnum; i++)); do
@@ -67,6 +67,7 @@ if [ "${mode}" = "c" ]; then
   # 删除临时目录
   rm -r temp
   rm -rf *.dat*
+  rm -r *key*
   # 5 删除所有文件
   #mv ${fileName%%.qualities}.pqsrc_v1 ${pwdPath}
   #rm -rf *dat*
