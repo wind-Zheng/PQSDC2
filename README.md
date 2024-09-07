@@ -2,8 +2,20 @@
 ![made-with-C++](https://img.shields.io/badge/Made%20with-C++11-brightgreen)
 ![made-with-OpenMP](https://img.shields.io/badge/Made%20with-OpenMP-blue)
 ![made-with-MPI](https://img.shields.io/badge/Made%20with-MPI-red)
+<p align="center">
+    Cluster Parallel Quality Score Data Lossless Compression via Sequence Multi-Partitioning and Redundant Encoding.
+</p>
+<p align="center">
+  <a href="#About The PQSDC2 ">About The PQSDC2</a> •
+  <a href="#copy-our-project">Copy Our Project</a> •
+  <a href="#useage">Useage</a> •
+  <a href="#example">Example</a> •
+  <a href="#our-experimental-configuration">Our Experimental Configuration</a> •
+    <a href="#dataset-acquisition">Dataset Acquisition</a> •
+  <a href="#aknowledgements">Acknowledgements</a> •
+</p>  
 
-## About The PQSDC 
+## About The PQSDC2 
 PQSDC2 is an experimental open-source quality-score data compressor that leverages parallel sequential multipartitioning and a parallel redundant coding model based on deep learning networks to improve compression rates while minimising memory and time consumption. In addition, the compression process can be accelerated by using a multi-core CPU cluster to significantly reduce time overhead.
 
 ## Copy Our Project
