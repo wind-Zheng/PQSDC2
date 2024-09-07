@@ -6,7 +6,7 @@
     Cluster Parallel Quality Score Data Lossless Compression via Sequence Multi-Partitioning and Redundant Encoding.
 </p>
 <p align="center">
-  <a href="#About The PQSDC2 ">About The PQSDC2</a> •
+  <a href="#About-The-PQSDC2 ">About The PQSDC2</a> •
   <a href="#copy-our-project">Copy Our Project</a> •
   <a href="#useage">Useage</a> •
   <a href="#example">Example</a> •
