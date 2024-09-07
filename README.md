@@ -46,8 +46,8 @@ source ~/.bashrc
        c [parnum] [threads] [qualities file]                     *compression mode.
        d [parnum] [threads] [pqsdc2 generate directory]          *decompression mode.
     Cluster Useage: pqsdc2_cluster.slurm [command option]
-       -c [parnum] [threads] [qualities file]                     *compression mode.
-       -d [parnum] [threads] [qualities file]                      *decompression mode.
+       -c [parnum] [threads] [qualities file]                    *compression mode.
+       -d [parnum] [threads] [qualities file]                    *decompression mode.
     Advanced Usage:pqsdc_tools [command option]
        -fileinfo [input-fastq-file]                       *print basic statistic information.
        -dirinfo [input-dir-name]                          *print basic statistic information.
