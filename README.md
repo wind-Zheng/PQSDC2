@@ -17,7 +17,7 @@
 </p>  
 
 ## About The PQSDC2 
-PQSDC2 is an experimental open-source quality-score data compressor that leverages parallel sequential multipartitioning and a parallel redundant coding model based on deep learning networks to improve compression rates while minimising memory and time consumption. In addition, the compression process can be accelerated by using a multi-core CPU cluster to significantly reduce time overhead.
+PQSDC2 is an experimental open-source quality-score data compressor that utilizes parallel sequential multipartitioning and a parallel redundant coding model based on deep learning networks to enhance compression rates while minimizing memory and time consumption. Moreover, the compression procedure can be expedited by employing a multi-core CPU cluster, thereby substantially decreasing time overhead.
 
 ## Copy Our Project
 
