@@ -112,7 +112,7 @@ In addition to this, the code programming environment for the experiment is as f
 
   Open Mpi : 2.1.2
   
-  Slurn : 19.05.5-1.0.0-29
+  Slurm : 19.05.5-1.0.0-29
   
 ## Dataset Acquisition
 We experimentally evaluated using the real publicly available sequencing datasets from the NCBI database.
