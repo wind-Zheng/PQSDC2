@@ -13,7 +13,7 @@
   <a href="#our-experimental-configuration">Our Experimental Configuration</a> •
   <a href="#dataset-acquisition">Dataset Acquisition</a> •
   <a href="#aknowledgements">Acknowledgements</a> •
-  <a href="#Additional Information">Additional Information</a> 
+  <a href="#Additional-Information">Additional Information</a> 
 </p>  
 
 ## About The PQSDC2 
